@@ -1,0 +1,117 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cartItem {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.cartItem img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.cartItem .description {
+  flex-grow: 1;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+.countHandler {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+}
+
+.countHandler button {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkout button {
+  width: 200px;
+  height: 60px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.countHandler .input {
+  width: 40px;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .cartItem {
+    flex-direction: column;
+  }
+
+  .cartItem img {
+    max-width: 100%;
+  }
+
+  .checkout button {
+    font-size: 18px;
+  }
+}
+
+.btnRemove2 {
+  background-color: #ff9933; /* Orange background color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  cursor: pointer;
+  margin-top: 10px; /* Add margin to separate from the countHandler */
+  margin-left: 25px;
+}
+
+.btnRemove2:hover {
+  background-color: #cc6600; /* Darker orange color on hover */
+}
+
+@media (max-width: 768px) {
+  .countHandler {
+    justify-content: center; /* Center align count handler for smaller screens */
+    margin-left: 0; /* Remove left margin for center alignment */
+  }
+
+  .btnRemove2 {
+    margin: 10px 0; /* Add margin to separate from other elements */
+  }
+}
+
+.checkout button {
+  width: 200px;
+  height: 60px;
+  background-color: #007bff; /* Blue background color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.checkout button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}

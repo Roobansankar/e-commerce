@@ -1,0 +1,158 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.categories button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.categories button:hover {
+  background-color: #ddd;
+}
+
+.categories button:active {
+  background-color: #a1a1a1;
+}
+
+.shopTitle {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+}
+
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px 15px 0 0;
+}
+
+.product .description {
+  text-align: center;
+  padding: 15px;
+  background-color: #f0f0f0;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.addToCartBttn {
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  border: 2px solid #333;
+  min-width: 100px;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btnRemove {
+  background-color: red;
+  color: white;
+  margin-top: 10px;
+  border: 2px solid red;
+  min-width: 100px;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.addToCartBttn:hover {
+  background-color: #333;
+  color: white;
+}
+
+input[type="number"] {
+  border: 1px solid #333;
+  padding: 8px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:hover {
+  border-color: #555;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+  .categories {
+    flex-wrap: wrap;
+  }
+
+  .categories button {
+    flex: 1 0 calc(50% - 10px);
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .product {
+    margin: 20px 0;
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 20px;
+}
+
+
+.categories button.active {
+  background-color: #333;
+  color: white;
+  border: 1px solid #333;
+}
+
+/* .categories button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+} */
+
+
